@@ -1,0 +1,20 @@
+import numpy as np
+n=int(input("Enter number of patients: "))
+for i in range(0,n):
+    patientlist=np.array(["ID","NAME","ASSIGN_DOC","PERSONAL_INFO","MED_HIS","TREATMENT","ROOMS","BILL"])
+    for i in range (patientlist(0),patientlist(7)):
+        print("give the details : ID,NAME,ASSIGN. DOC,PERSONAL INFO,MED. HIS,TREATMENT,ROOMS,BILL")
+        print("For patient ",n)
+        #for input
+        for j in range (0,n):
+            input()   
+    x=int(input("Enter number of doctors: "))
+for i in range(0,n):
+    doclist=np.array(["ID","NAME","SPECIAL"])
+    for i in range(doclist[0],doclist[2]):
+        print("for doc",x)
+        for j in range(0,x):
+            input()
+import scipy as sci
+def maxpatient(doclist):
+    y=sci.min(doclist)
